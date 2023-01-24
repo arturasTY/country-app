@@ -1,0 +1,70 @@
+.countries
+    padding-top: 50px
+    &__search
+        display: flex
+        justify-content: space-between
+        gap: 15px
+        @media only screen and (max-width: 540px)
+            flex-direction: column
+    &__select-inputs
+        display: flex
+    &__sort-order
+        margin-right: 20px
+    &__clear-input
+        color: #8d3838
+        display: block
+        position: absolute
+        top: 12px
+        cursor: pointer
+        right: 5px
+        padding: 0 5px
+    &__select, &__sort-order
+        display: flex
+        align-items: center
+        position: relative
+        width: 120px
+        @media only screen and (max-width: 540px)
+            width: 50%
+        select
+            width: 100%
+            border: none
+            appearance: none
+            padding: 10px
+            box-shadow: inset 0 1px 0 0 rgba(white, 0.05)
+            border-radius: 4px
+            font-family: inherit
+            font-size: inherit
+            color: var(--light-grey)
+            background-color: var(--grey)
+        &::after
+            content: ""
+            width: 0.7em
+            height: 0.4em
+            background-color: var(--dark-text)
+            clip-path: polygon(100% 0%, 0 0%, 50% 100%)
+            position: absolute
+            right: 10px
+    &__input
+        width: 350px
+        position: relative
+        @media only screen and (max-width: 540px)
+            width: auto
+        input
+            width: 100%
+            height: 100%
+            border: none
+            box-shadow: inset 0 1px 0 0 rgba(white, 0.05)
+            border-radius: 4px
+            padding: 10px
+            font-family: inherit
+            background-color: var(--grey)
+            color: var(--dark-text)
+            &::placeholder
+                color: var(--light-grey)
+    &__list
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+        grid-gap: 1rem
+        padding: 50px 0
+        @media only screen and (max-width: 540px)
+            grid-template-columns: 1fr

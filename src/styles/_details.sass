@@ -1,0 +1,64 @@
+.details-s
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 50px 0
+    .details
+        background-color: var(--grey)
+        border-radius: 8px
+        width: 100%
+        padding: 40px
+        box-shadow: inset 0 1px 0 0 rgba(white, 0.05)
+        &__back-btn
+            display: flex
+            align-items: center
+            color: var(--dark-text)
+            margin-bottom: 20px
+            transition: opacity .3s ease
+            &:hover
+                opacity: .6
+            svg
+                width: 2.25em
+                height: 2.25em
+            span
+                margin-left: 5px
+        &__block
+            display: flex
+            align-items: center
+            @media only screen and (max-width: 768px)
+                flex-direction: column
+        &__copy
+            padding-left: 70px
+            width: 100%
+            @media only screen and (max-width: 768px)
+                padding-left: 0
+                padding-top: 30px
+        &__wrapper
+            margin-bottom: 20px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 40px
+        &__lists
+            display: flex
+            flex-wrap: wrap
+            gap: 10px
+            color: var(--dark-text)
+            li
+                padding: 2px 6px
+                border: 1px solid var(--light-grey)
+                border-radius: 8px
+                &:hover a
+                    opacity: .5
+                a
+                    color: var(--dark-text)
+                    transition: opacity .6s ease
+        &__title
+            font-size: .8em
+            color: var(--light-grey)
+            display: block
+        &__prop
+            margin-bottom: 10px
+            color: var(--dark-text)
+        &__standalone
+            margin-bottom: 10px
+            color: var(--dark-text)
