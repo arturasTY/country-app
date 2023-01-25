@@ -5,9 +5,9 @@ Built with React & Vite.
 
 ![Free-Keyboard-With-Tablet-Mockup](https://user-images.githubusercontent.com/30295076/214605013-e52a05ec-0795-4457-a7fe-da6958b65232.jpg)
 
-[Live Demo](link)
+🔗 [Live Demo](https://arturasty.github.io/country-app)
 
-Features:
+✅ Features:
 * View all countries
 * View detailed information for each country
 * Search by country name
@@ -17,9 +17,9 @@ Features:
 * React Loading Skeleton
 * Theme Switch
 
-# How to use this repo:
+# ⚙️ How to use this repo:
 ```shell
-    $ cd <your-directory>
+    $ cd `<your-directory>`
     $ git clone https://github.com/arturasTY/country-app.git
     $ npm install
     $ npm run dev
