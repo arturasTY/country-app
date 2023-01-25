@@ -5,13 +5,13 @@ const useFetch = (url) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // function sortData(data) {
-  //   let sortedData
-  //   sortedData = [...data].sort((a, b) => {
-  //     return a.name.common.localeCompare(b.name.common);
-  //   });
-  //   setData(sortedData);
-  // }
+  function sortData(data) {
+    let sortedData
+    sortedData = [...data].sort((a, b) => {
+      return a.name.common.localeCompare(b.name.common);
+    });
+    setData(sortedData);
+  }
 
   useEffect(() => {
     const controller = new AbortController();
@@ -21,7 +21,7 @@ const useFetch = (url) => {
           setLoading(true)
           const response = await fetch(url, {signal});
           const data = await response.json()
-          setData(data)
+          sortData(data)
         } catch (error) {
           const err = error.response ? error.response.data : "Server Error"
           setError(err)

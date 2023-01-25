@@ -12,7 +12,6 @@ export const Details = () => {
   const {countryname} = useParams()
   const {data, loading} = useFetch(`${nameUrl}/${countryname}`);
   const empty = {}
-  const nf = Intl.NumberFormat()
   
   return (
     <section className="details-s">
@@ -28,7 +27,7 @@ export const Details = () => {
                 <div className="details__copy--left">
                   <p className="details__prop"><small className="details__title">Name</small> {country.name.common}</p>
                   <p className="details__prop"><small className="details__title">Capital</small> {country.capital}</p>
-                  <p className="details__prop"><small className="details__title">Population</small> {nf.format(country.population)}</p>
+                  <p className="details__prop"><small className="details__title">Population</small> {country.population.toLocaleString()}</p>
                   <p className="details__prop"><small className="details__title">Top Level Domain</small> {country.tld}</p>
                 </div>
                 <div className="details__copy--right">
