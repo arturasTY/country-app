@@ -82,7 +82,7 @@ export const CountriesList = () => {
                 {loading && <CountrySkeleton countries={30} />}
                 {filteredData?.length ? (
                     filteredData.map(({name, cca3, region, capital, population, flags}) => (
-                        <Link to={`/country-app/country/${cca3.toLowerCase()}`} key={name.official}>
+                        <Link to={`/country/${cca3.toLowerCase()}`} key={name.official}>
                             <Country name={name} region={region} capital={capital} population={population} flags={flags} />
                         </Link>
                     ))

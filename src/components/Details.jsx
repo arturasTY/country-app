@@ -16,7 +16,7 @@ export const Details = () => {
   return (
     <section className="details-s">
       <div className="details">
-      <Link to="/country-app" className="details__back-btn" aria-label="Close"><IoArrowBackCircleOutline /> <span>Back</span></Link>
+      <Link to="/" className="details__back-btn" aria-label="Close"><IoArrowBackCircleOutline /> <span>Back</span></Link>
         {!loading ? data.map((country) => (
           <div className="details__block" key={country.name.common}>
             <div className="details__img">
@@ -61,7 +61,7 @@ export const Details = () => {
                 <p><small className="details__title">Borders the following countries</small></p>
                 <ul className="details__lists">
                   {country.borders ? country.borders.map((countryCode) => (
-                    <li key={countryCode}><Link to={`/country-app/country/${countryCode.toLowerCase()}`}>{countryCode}</Link></li>
+                    <li key={countryCode}><Link to={`/country/${countryCode.toLowerCase()}`}>{countryCode}</Link></li>
                   )) : '—'}
                 </ul>
               </div>

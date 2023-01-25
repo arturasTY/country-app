@@ -24,8 +24,8 @@ function App() {
         <ThemeSwitch handleThemeSwitch={handleThemeSwitch} theme={theme} />
         <Hero />
         <Routes>
-          <Route path="/country-app" element={<CountriesList />} />
-          <Route path="/country-app/country/:countryname" element={<Details />} />
+          <Route path="/" element={<CountriesList />} />
+          <Route path="/country/:countryname" element={<Details />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
