@@ -1,5 +1,6 @@
-# Country Search application using [Rest Countries API](https://restcountries.com/) 
-Built with React & Vite.
+# Country Search application using [Rest Countries API](https://restcountries.com/)
+
+[![](https://skillicons.dev/icons?i=vite,react,sass)]()
 
 ![Digital-Mockup-Freebie-2](https://user-images.githubusercontent.com/30295076/214604951-5ec3ad2d-2a5a-4e13-93c4-0673a53eb2e5.jpg)
 
